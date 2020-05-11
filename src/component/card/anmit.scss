@@ -1,0 +1,28 @@
+.slide-enter {
+  opacity: 0;
+  transform: translateY(15px);
+  pointer-events: none;
+}
+
+.slide-enter-active {
+  // opacity: 1;
+  // transition: opacity 500ms ease-in;
+  transition: all 0.25s ease-in-out;
+  transition-delay: 0.1s;
+  position: relative;
+}
+
+.slide-exit-active {
+  // opacity: 0;
+  // transition: opacity 500ms ease-in;
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+}
+
+
+
+.slide-exit-done {
+  opacity: 0;
+  transform: translateY(-15px);
+  pointer-events: none;
+}

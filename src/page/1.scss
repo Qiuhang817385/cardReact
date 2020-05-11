@@ -1,0 +1,43 @@
+// .fade-appear {}
+
+// .fade-appear-active {}
+.hellow {
+  opacity: 1;
+  transform: translateX(30px);
+}
+
+.fade-appear-done {}
+
+.fade-enter,
+.fade-appear {
+  opacity: 1;
+  // 两边需要设置成一样的值
+  transform: translateX(30);
+  // transform: scale(0.9);
+}
+
+.fade-enter-active,
+.fade-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 250ms ease-in;
+}
+
+.fade-enter-done {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+// .fade-exit {
+//   opacity: 1;
+// }
+
+// .fade-exit-active {
+//   opacity: 0;
+//   // transform: scale(0.9);
+//   transition: all 250ms ease-in;
+// }
+
+// .fade-exit-done {
+//   opacity: 0;
+// }

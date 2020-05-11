@@ -1,0 +1,18 @@
+// 循环+1,每次改变数组当中的值
+    if (count < 6) {
+      let copyFlag = flag;
+      copyFlag[count] = true;
+      setFlag(() => { return [...copyFlag] });
+      setCount(count + 1);
+      console.log('object :', flag);
+      // 怎么做减法?
+      // 新建一个state--->是input的value的长度,
+      // 长度是1,前1个是true
+      //长度是2,前2个是true,其余false
+      //长度是6,全部true
+      //长度是5,前5个设置成true,最后一个设置成false
+      // 做法
+      // 上来先全部设置成false,再一个一个设置成true?
+      // 不行,这样所有的元素都会出现动画
+      // 使用数组过滤
+    }
